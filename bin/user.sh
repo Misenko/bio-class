@@ -10,7 +10,7 @@ function configure_user {
   for file in ${files}; do
     dest_path=${HOME_DIR}/${file}
     if [ ! -f ${dest_path} ]; then
-      cp ${CONF_DIR}/${file} ${dest_path}
+      envsubst '$PATH_FILE' < ${CONF_DIR}/${file} > ${dest_path}
       chown ${USERNAME}:${USERNAME} ${dest_path}
     fi
   done
