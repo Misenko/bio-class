@@ -1,5 +1,6 @@
 #!/bin/bash
 
 function run_sshd {
-  /usr/sbin/sshd -D &
+  echo " * Starting SSH daemon"
+  /usr/sbin/sshd
 }
