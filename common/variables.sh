@@ -7,10 +7,8 @@ set -e
 USERNAME="student"
 
 # Paths
-INSTALL_DIR="/opt/bio-class"
-BIN_DIR="${INSTALL_DIR}/bin"
-CONF_DIR="${INSTALL_DIR}/conf"
-
+CONF_DIR="/opt/bio-class/conf"
 HOME_DIR="/home/${USERNAME}"
 
-PATH_FILE="${INSTALL_DIR}/bio_paths.sh"
+INSTALL_DIR="/opt/bio-software"
+export PATH_FILE="${INSTALL_DIR}/paths.sh"
