@@ -8,6 +8,7 @@ source $(dirname $0)/software/sshd.sh
 source $(dirname $0)/software/utils.sh
 
 source $(dirname $0)/environment/user.sh
+source $(dirname $0)/environment/install-dir.sh
 
 update_sources
 install_locales
@@ -18,3 +19,4 @@ configure_sshd
 install_utils
 
 create_user
+make_install_dir
