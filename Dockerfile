@@ -1,5 +1,6 @@
 FROM ubuntu:16.04
 
+ARG branch=master
 ARG version
 
 ENV name="bio-class"
